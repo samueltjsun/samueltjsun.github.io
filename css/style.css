@@ -248,7 +248,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .gtco-video {
   height: 450px;
-  overflow: hidden;
+  overflow: visible;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   -ms-border-radius: 7px;
