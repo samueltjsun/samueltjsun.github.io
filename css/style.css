@@ -47,13 +47,13 @@ body {
 }
 
 a {
-  color: #9a1010;
+  color: #d84f4f;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: #9a1010;
+  color: #d84f4f;
   outline: none;
   text-decoration: none;
 }
@@ -71,17 +71,17 @@ h1, h2, h3, h4, h5, h6, figure {
 
 ::-webkit-selection {
   color: #fff;
-  background: #9a1010;
+  background: #d84f4f;
 }
 
 ::-moz-selection {
   color: #fff;
-  background: #9a1010;
+  background: #d84f4f;
 }
 
 ::selection {
   color: #fff;
-  background: #9a1010;
+  background: #d84f4f;
 }
 
 .gtco-container {
@@ -204,7 +204,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #fff;
 }
 .gtco-nav ul li.btn-cta a {
-  color: #9a1010;
+  color: #d84f4f;
 }
 .gtco-nav ul li.btn-cta a span {
   background: #fff;
@@ -427,7 +427,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: inline-block;
   zoom: 1;
   *display: inline;
-  color: #9a1010;
+  color: #d84f4f;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -446,7 +446,7 @@ h1, h2, h3, h4, h5, h6, figure {
   position: relative;
 }
 .gtco-contact-info ul li:before {
-  color: #9a1010;
+  color: #d84f4f;
   position: absolute;
   left: 0;
   top: .05em;
@@ -524,7 +524,7 @@ form label {
 .gtco-cover .display-tc .btn {
   padding: 15px 30px;
   background: #fff !important;
-  color: #9a1010;
+  color: #d84f4f;
   border: none !important;
   font-size: 18px;
   text-transform: uppercase;
@@ -637,7 +637,7 @@ form label {
   height: 90px;
   font-size: 40px;
   line-height: 40px;
-  color: #9a1010;
+  color: #d84f4f;
 }
 .feature-center p, .feature-center h3 {
   margin-bottom: 30px;
@@ -682,7 +682,7 @@ form label {
   display: table-cell;
   vertical-align: middle;
   font-size: 30px;
-  color: #9a1010;
+  color: #d84f4f;
 }
 .feature-left .feature-copy {
   float: left;
@@ -815,7 +815,7 @@ form label {
 }
 .gtco-tabs .gtco-tab-nav li.active a {
   background: #fff;
-  color: #9a1010;
+  color: #d84f4f;
 }
 .gtco-tabs .gtco-tab-content-wrap {
   clear: both;
@@ -850,7 +850,7 @@ form label {
   }
 }
 .gtco-tabs .icon-xlg i {
-  color: #9a1010;
+  color: #d84f4f;
 }
 
 #gtco-started {
@@ -896,7 +896,7 @@ form label {
 #gtco-started .btn {
   height: 54px;
   border: none !important;
-  background: #9a1010;
+  background: #d84f4f;
   color: #fff;
   font-size: 16px;
   text-transform: uppercase;
@@ -966,7 +966,7 @@ form label {
 }
 .owl-carousel .owl-controls .owl-dot.active span {
   background: transparent;
-  border: 2px solid #9a1010;
+  border: 2px solid #d84f4f;
 }
 
 #gtco-offcanvas {
@@ -1223,9 +1223,9 @@ form label {
 }
 
 .btn-primary {
-  background: #9a1010;
+  background: #d84f4f;
   color: #fff;
-  border: 2px solid #9a1010;
+  border: 2px solid #d84f4f;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background: #66d8b4 !important;
@@ -1233,11 +1233,11 @@ form label {
 }
 .btn-primary.btn-outline {
   background: transparent;
-  color: #9a1010;
-  border: 2px solid #9a1010;
+  color: #d84f4f;
+  border: 2px solid #d84f4f;
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: #9a1010;
+  background: #d84f4f;
   color: #fff;
 }
 
@@ -1367,7 +1367,7 @@ form label {
 .form-control:active, .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #9a1010;
+  border-color: #d84f4f;
 }
 
 .row-pb-md {
