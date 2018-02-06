@@ -577,6 +577,7 @@ form label {
   margin-left: 3px;
 }
 
+#about
 #gtco-features,
 #gtco-features-2,
 #gtco-testimonial,
@@ -587,7 +588,8 @@ form label {
   padding: 7em 0;
   clear: both;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) { 
+  #about
   #gtco-features,
   #gtco-features-2,
   #gtco-testimonial,
