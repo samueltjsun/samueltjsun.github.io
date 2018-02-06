@@ -578,6 +578,7 @@ form label {
 }
 
 #gtco-about,
+#gtco-projects,
 #gtco-features,
 #gtco-features-2,
 #gtco-testimonial,
@@ -590,6 +591,7 @@ form label {
 }
 @media screen and (max-width: 768px) { 
   #gtco-about,
+  #gtco-projects,
   #gtco-features,
   #gtco-features-2,
   #gtco-testimonial,
