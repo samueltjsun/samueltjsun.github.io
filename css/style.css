@@ -246,6 +246,15 @@ h1, h2, h3, h4, h5, h6, figure {
   position: relative;
 }
 
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
 .gtco-video {
   height: 450px;
   overflow: hidden;
