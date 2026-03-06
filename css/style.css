@@ -2157,3 +2157,101 @@ figure figcaption {
   z-index: 2;
   box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Optional: adds depth to the overlap */
 }
+
+/* --- 1. The Dark Header Box --- */
+.timeline-header-dark {
+  background-color: #1a1f2b;
+  color: white;
+  display: inline-flex;
+  padding: 10px 20px;
+  border-radius: 10px;
+  gap: 15px;
+  margin-bottom: -15px; /* Pulls content box closer */
+  position: relative;
+  z-index: 3; /* Keeps it above the white box */
+  margin-left: 20px; /* Aligns with the content indentation */
+}
+
+.timeline-box.left .timeline-header-dark {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.header-item {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.h-val { font-size: 13px; font-weight: bold; }
+.h-label { font-size: 10px; color: #888; text-transform: uppercase; }
+
+.header-item.border-left {
+  border-left: 1px solid #3d4451;
+  padding-left: 15px;
+}
+
+/* --- 2. Skills Pills --- */
+.skills-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 15px;
+}
+
+.pill {
+  background: #f1f3f5;
+  border: 1px solid #dee2e6;
+  padding: 3px 12px;
+  border-radius: 50px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #495057;
+  transition: .2s;
+}
+
+.pill:hover {
+  background: #4b6a8f;
+  color: white;
+  border-color: #4b6a8f;
+}
+
+/* --- 3. View More Button --- */
+.view-more-btn {
+  background: black;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.2s;
+  /* , background 0.2s; */
+}
+
+.view-more-btn:hover {
+  background: #333;
+  transform: translateY(-2px);
+}
+
+.chevron::after {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: rotate(45deg);
+  margin-bottom: 3px;
+}
+
+/* Adjusting your existing content box for better flow */
+.timeline-content {
+  padding-top: 30px !important; /* Extra padding for the overlapping header */
+  border-radius: 12px !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05) !important;
+}
