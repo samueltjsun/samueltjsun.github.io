@@ -2121,8 +2121,8 @@ figure figcaption {
   border-radius: 6px;
 }
 
-.timeline-box.left .timeline-content { border-right: 3px solid #4b6a8f; }
-.timeline-box.right .timeline-content { border-left: 3px solid #4b6a8f; }
+/* .timeline-box.left .timeline-content { border-right: 3px solid #4b6a8f; }
+.timeline-box.right .timeline-content { border-left: 3px solid #4b6a8f; } */
 
 /* Typography styling */
 .date { font-weight: 700; color: #4b6a8f; font-size: 0.8rem; text-transform: uppercase; }
@@ -2160,16 +2160,19 @@ figure figcaption {
 
 /* --- 1. The Dark Header Box --- */
 .timeline-header-dark {
-  background-color: #1a1f2b;
+  background-color: #4b6a8f;
   color: white;
   display: inline-flex;
   padding: 10px 20px;
   border-radius: 10px;
   gap: 15px;
-  margin-bottom: -15px; /* Pulls content box closer */
+  margin-bottom: 15px; /* Pulls content box closer */
   position: relative;
   z-index: 3; /* Keeps it above the white box */
   margin-left: 20px; /* Aligns with the content indentation */
+  
+  /* Added a small shadow to the black box itself */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .timeline-box.left .timeline-header-dark {
@@ -2183,8 +2186,30 @@ figure figcaption {
   line-height: 1.2;
 }
 
-.h-val { font-size: 13px; font-weight: bold; }
-.h-label { font-size: 10px; color: #888; text-transform: uppercase; }
+/* .h-val { font-size: 13px; font-weight: bold; }
+.h-label { font-size: 10px; color: #888; text-transform: uppercase; } */
+
+.h-val {
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.h-label {
+  color: #ffffff85;
+  font-size: 0.65rem;
+  /* CHANGE: This capitalizes only the first letter of each word */
+  text-transform: capitalize; 
+  
+  /* CHANGE: This centers the text within the flex item */
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin-top: 2px;
+
+  /* Ensure the parent container doesn't block the centering */
+  display: block; 
+  width: 100%;
+}
 
 .header-item.border-left {
   border-left: 1px solid #3d4451;
@@ -2218,7 +2243,7 @@ figure figcaption {
 
 /* --- 3. View More Button --- */
 .view-more-btn {
-  background: black;
+  background: #4b6a8f;
   color: white;
   border: none;
   padding: 12px 25px;
@@ -2230,7 +2255,7 @@ figure figcaption {
   align-items: center;
   gap: 10px;
   transition: transform 0.2s;
-  /* , background 0.2s; */
+  /*,  background 0.2s; */
 }
 
 .view-more-btn:hover {
@@ -2255,3 +2280,64 @@ figure figcaption {
   border-radius: 12px !important;
   box-shadow: 0 10px 30px rgba(0,0,0,0.05) !important;
 }
+
+/* Container for the content card */
+.card-styled {
+  background: #f8f9fa !important;
+  border-radius: 16px !important;
+  /* padding: 30px 25px !important; */
+  padding: 45px 30px 30px 30px !important;
+  text-align: left !important; /* Forces all text to align left */
+  border: none !important;
+  position: relative;
+  z-index: 1;
+  /* box-shadow: 0 4px 20px rgba(0,0,0,0.05); */
+
+  /* This specific shadow matches the Alvalens/Joki Proyek style */
+  box-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.05), 
+    0 10px 20px rgba(0, 0, 0, 0.08), 
+    0 25px 50px -12px rgba(0, 0, 0, 0.12) !important;
+    
+  /* Smoothly transition the shadow if you add a hover effect later */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Optional: Subtle lift when hovering over the card */
+.card-styled:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+    0 15px 30px rgba(0,0,0,0.1), 
+    0 5px 15px rgba(0,0,0,0.05) !important;
+}
+
+/* Typography for the Role and Company */
+.role-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.job-meta {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-bottom: 15px;
+}
+
+.job-designation {
+  font-weight: 600;
+  color: #343a40;
+}
+
+.job-type {
+  color: #888;
+}
+
+.job-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 20px;
+}
+
