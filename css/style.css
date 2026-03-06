@@ -2341,3 +2341,65 @@ figure figcaption {
   margin-bottom: 20px;
 }
 
+/* Significantly thinner card layout */
+.pub-card-compact {
+    max-width: 850px;
+    margin: 0 auto !important;
+    padding: 20px 15px !important; /* Reduced top/bottom padding */
+    border-radius: 10px !important;
+    transition: all 0.3s ease;
+}
+
+/* Typography for the smaller title */
+.pub-title-sm {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: #000;
+}
+
+/* Condensed Author List */
+.pub-authors-sm {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 8px;
+}
+
+.pub-authors-sm strong {
+    color: #4b6a8f;
+}
+
+/* Metadata Row (Year, Journal, etc.) */
+.pub-meta-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 0.75rem;
+    color: #9ca3af;
+}
+
+.pub-tag {
+    /* background: #1a1f2b;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 600; */
+  background: #f1f3f5;
+  border: 1px solid #dee2e6;
+  padding: 3px 12px;
+  border-radius: 50px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #495057;
+  transition: .2s;
+}
+
+.pub-journal {
+    font-style: italic;
+    font-weight: 500;
+}
+
+.pub-cite-count {
+    color: #4b6a8f;
+    font-weight: 600;
+}
