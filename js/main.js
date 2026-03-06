@@ -387,3 +387,22 @@ jQuery(document).ready(function($) {
 	});
 
 });
+
+$(function() {
+  if ($('#typed-roles').length) {
+    var typed = new Typed('#typed-roles', {
+      strings: [
+        'Developer', 
+        'Designer', 
+        'Creator', 
+        'Freelancer',
+		'Chef'
+      ],
+      typeSpeed: 50,
+      backSpeed: 30,
+      backDelay: 2000,
+      loop: true,
+      cursorChar: '|'
+    });
+  }
+});

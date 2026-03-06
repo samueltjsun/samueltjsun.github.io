@@ -598,7 +598,7 @@ body:after {
     min-height: 400px;
     height: calc(20vh); }
   .site-blocks-cover h1 {
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: 400;
     color: #fff;
     font-weight: 900; }
@@ -2402,4 +2402,58 @@ figure figcaption {
 .pub-cite-count {
     color: #4b6a8f;
     font-weight: 600;
+}
+
+.gradient-text {
+  /* The colors for your gradient */
+  background: linear-gradient(to bottom, #7bf4e0, #8db5e5, #b1dffc);
+  /* #6fbae2 */
+  /* This masks the background to the text */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  
+  /* Makes the font stand out */
+  font-weight: 900;
+  display: inline-block;
+}
+
+.hero-title {
+    /* Existing styles for neon gradient and size */
+    margin-top: 200px; /* Adjust this value to move the text further down */
+    font-weight: 900;
+    line-height: 1.1;
+}
+
+/* Styling the cursor */
+.typed-cursor {
+  color: #ffffff; /* Match your neon cyan */
+  font-size: 3em;
+  opacity: 1;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Ensure the typed text matches your gradient */
+#typed-roles {
+  display: inline-block;
+  min-width: 10px; /* Prevents layout jump */
+}
+
+.cursor-text {
+  /* OR use responsive sizing to match your 'Hello' text */
+  /* font-size: clamp(2rem, 5vw, 4rem);  */
+
+  /* Use a fixed large size */
+  font-size: 3rem;
+  
+  font-weight: 900;
+  display: inline-block;
+  line-height: 1.2;
 }
