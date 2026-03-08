@@ -2413,6 +2413,8 @@ figure figcaption {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+
+  font-size: clamp(3rem, 8vw, 5rem);
   
   /* Makes the font stand out */
   font-weight: 900;
