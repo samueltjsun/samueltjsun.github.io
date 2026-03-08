@@ -2429,7 +2429,8 @@ figure figcaption {
 /* Styling the cursor */
 .typed-cursor {
   color: #ffffff; /* Match your neon cyan */
-  font-size: 3em;
+  /* font-size: 3em; */
+  font-size: clamp(1.8rem, 3rem + 1vw, 4rem);
   opacity: 1;
   animation: blink 0.7s infinite;
 }
@@ -2448,10 +2449,10 @@ figure figcaption {
 
 .cursor-text {
   /* OR use responsive sizing to match your 'Hello' text */
-  /* font-size: clamp(2rem, 5vw, 4rem);  */
+  font-size: clamp(1.8rem, 3rem + 1vw, 4rem); 
 
   /* Use a fixed large size */
-  font-size: 3rem;
+  /* font-size: 3rem; */
   
   font-weight: 900;
   display: inline-block;
