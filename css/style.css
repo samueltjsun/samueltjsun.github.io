@@ -2433,7 +2433,7 @@ figure figcaption {
   color: #ffffff; /* Match your neon cyan */
   /* font-size: 3em; */
   font-size: 3vw;
-  font-size: clamp(1rem, 3rem + 1vw, 4rem);
+  font-size: clamp(1.2rem, 0.35rem + 4.3vw, 3.6rem);
   opacity: 1;
   animation: blink 0.7s infinite;
 }
@@ -2452,7 +2452,7 @@ figure figcaption {
 
 .cursor-text {
   /* OR use responsive sizing to match your 'Hello' text */
-  font-size: clamp(1rem, 3rem + 1vw, 4rem); 
+  font-size: clamp(1.2rem, 0.35rem + 4.3vw, 3.6rem);
 
   /* Use a fixed large size */
   /* font-size: 3rem; */
